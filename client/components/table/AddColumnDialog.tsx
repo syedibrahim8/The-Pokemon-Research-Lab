@@ -60,8 +60,8 @@ export function AddColumnDialog({
         </div>
 
         <DialogFooter className="mt-2">
-          <Button variant="outline" onClick={() => onOpenChange(false)}>Cancel</Button>
-          <Button onClick={submit}>Create</Button>
+          <Button className="cursor-pointer" variant="outline" onClick={() => onOpenChange(false)}>Cancel</Button>
+          <Button className="cursor-pointer" onClick={submit}>Create</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

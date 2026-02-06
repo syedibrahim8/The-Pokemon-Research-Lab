@@ -103,7 +103,7 @@ export function PokemonTable() {
     <div className="w-full">
       <AddColumnDialog open={addOpen} onOpenChange={setAddOpen} />
 
-      <div className="rounded-xl border bg-card">
+      <div className="rounded-2xl border bg-card shadow-sm">
         {/* header */}
         <div className="border-b px-3 py-2 flex items-center justify-between gap-3">
           <div className="font-semibold">Dataset Table</div>
@@ -155,7 +155,7 @@ export function PokemonTable() {
                   className="absolute left-0 right-0"
                   style={{ transform: `translateY(${vi.start}px)` }}
                 >
-                  <div className="flex w-max border-b">
+                  <div className="flex w-max border-b hover:bg-muted/40 transition-colors">
                     {r.getVisibleCells().map((cell) => {
                       const sticky = (cell.column.columnDef.meta as any)?.sticky as "left" | "right" | undefined;
                       return (

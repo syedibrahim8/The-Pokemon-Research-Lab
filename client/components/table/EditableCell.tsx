@@ -35,7 +35,7 @@ export function EditableCell({
 
   return (
     <Input
-      className={cn("h-8", className)}
+      className={cn("h-8 bg-background/50 focus:bg-background transition-colors", className)}
       value={local}
       onChange={(e) => setLocal(e.target.value)}
       onBlur={() => onCommit(coerce(local))}

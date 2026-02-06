@@ -130,7 +130,7 @@ export function SchemaMapper({ file, headers }: { file: File; headers: string[] 
       {err ? <div className="text-sm text-destructive">{err}</div> : null}
 
       <div className="flex items-center gap-2">
-        <Button disabled={parsing} onClick={runParse}>
+        <Button className="cursor-pointer" disabled={parsing} onClick={runParse}>
           {parsing ? "Parsing…" : "Import CSV"}
         </Button>
         {progress ? <div className="text-sm text-muted-foreground">Rows parsed: {progress.rows.toLocaleString()}</div> : null}

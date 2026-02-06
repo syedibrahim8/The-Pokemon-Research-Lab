@@ -41,6 +41,7 @@ export function CsvUpload() {
         <div className="flex items-center justify-between">
           <div className="font-semibold">Manual CSV Upload</div>
           <Button
+            className = "cursor-pointer"
             variant="outline"
             size="sm"
             onClick={() => fileInputRef.current?.click()}
